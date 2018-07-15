@@ -1,0 +1,23 @@
+@import '../../sass/_variables.scss';
+
+.headerNav {
+    position: fixed;
+    display: inline-block;
+    top: 0px;
+    left: 0px;
+    background-color: $primary-color;
+    width: 100%;
+    padding: 10px;
+}
+
+.navItem {
+    padding: 10px;
+    display: inline-block;
+    color: white;
+    font-family: sans-serif;
+    border-radius: 10px;
+    background-color: brown;
+    width: 10%;
+    text-align: center;
+    margin-left: 5px;
+}
