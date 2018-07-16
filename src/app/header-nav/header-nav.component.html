@@ -1,5 +1,5 @@
 <div class="headerNav">
-    <span class="navItem col-2" *ngFor="let navItem of navItems">
-        {{navItem}}
-    </span>
+    <button *ngFor="let navItem of navItems" [routerLink]="navItem.url" [routerLinkActive]="['selected']" [routerLinkActiveOptions]="{ exact: true }" class="navItem">
+        {{navItem.label}}
+    </button>
 </div>

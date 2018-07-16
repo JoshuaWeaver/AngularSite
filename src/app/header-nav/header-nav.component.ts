@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NavItem } from '../NavItem';
 
 @Component({
   selector: 'app-header-nav',
@@ -6,9 +7,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./header-nav.component.scss']
 })
 export class HeaderNavComponent implements OnInit {
-  navItems: string[] = [
-    "About Me",
-    "Calendar"
+  navItems: NavItem[] = [
+    {label:"Home", url:""},
+    {label:"Calendar", url:"/calendar"}
   ];
   constructor() { }
 
